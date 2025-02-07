@@ -51,7 +51,7 @@ export default function View({ params }: { params: { id: string } }) {
         transition={{ duration: 0.6 }}
         className="max-w-md mx-auto"
       >
-        <Card className="shadow-lg border-pink-200">
+        <Card className="shadow-lg border-pink-200 bg-gradient-to-br from-purple-500/30 to-blue-500/30 backdrop-blur-sm">
           <CardHeader>
             <div className="space-y-2">
               <CardTitle className="text-center text-3xl font-bold bg-gradient-to-r from-rose-400 to-pink-600 text-transparent bg-clip-text">
