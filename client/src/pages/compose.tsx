@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import FloatingHearts from "@/components/animations/FloatingHearts";
 import TextReveal from "@/components/animations/TextReveal";
-import Heart from "@/components/animations/Heart";
 
 export default function Compose() {
   const [step, setStep] = useState(0);
@@ -83,7 +82,6 @@ export default function Compose() {
           transition={{ duration: 0.5 }}
           className="text-center space-y-6"
         >
-          <Heart />
           <h2 className="text-2xl font-bold text-rose-500">
             {confessionSteps[step].title}
           </h2>
