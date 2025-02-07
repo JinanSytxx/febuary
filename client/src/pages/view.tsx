@@ -80,7 +80,7 @@ export default function View({ params }: { params: { id: string } }) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
-                className="bg-white/80 backdrop-blur-sm rounded-lg p-6 shadow-inner"
+                className="bg-white/60 backdrop-blur-sm rounded-lg p-8 shadow-inner min-h-[200px] w-full max-w-2xl mx-auto"
               >
                 <p className="text-gray-800 whitespace-pre-wrap">{confession.message}</p>
               </motion.div>
