@@ -175,14 +175,17 @@ export default function Compose() {
   };
 
   return (
-    <div 
-      className="min-h-screen bg-cover bg-center bg-no-repeat py-12 px-4 flex items-center justify-center"
-      style={{
-        backgroundImage: 'url("/background.jpg")',
-        backgroundAttachment: 'fixed'
-      }}
-      onMouseMove={handleMouseMove}
-    >
+    <div className="min-h-screen py-12 px-4 flex items-center justify-center relative overflow-hidden" onMouseMove={handleMouseMove}>
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute top-0 left-0 min-w-full min-h-full w-auto h-auto object-cover -z-10"
+        style={{filter: 'brightness(0.6)'}}
+      >
+        <source src="/background.mp4" type="video/mp4" />
+      </video>
       {showSuccess && <FloatingHearts />}
 
       <div className="max-w-md w-full mx-auto">
