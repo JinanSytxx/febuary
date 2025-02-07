@@ -151,7 +151,7 @@ export default function Compose() {
               <TextReveal text="TOLONG DI BACA DULU SEBELUM JAWAB:)" />
             </p>
             <p className="text-center text-xs text-gray-500 px-4">
-              <TextReveal text="Maap kalo confess nya sederhana aku cmn bisa buat kayak gini bukan kayak orang² yg kirim buket bunga,aku harap kamu mau terima:)" />
+              <TextReveal text="Maap kalo confess nya sederhana aku cmn bisa buat kayak gini,dan maap gk bisa kayak orang² yg kirim buket bunga & coklat,aku harap kamu mau terima:)" />
             </p>
           </div>
         </div>
@@ -169,7 +169,7 @@ export default function Compose() {
               variant="outline"
               className="border-rose-300 min-w-[100px]"
             >
-              Tidak
+              Gak
             </Button>
           </motion.div>
         </div>
