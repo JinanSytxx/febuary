@@ -55,17 +55,19 @@ export default function View({ params }: { params: { id: string } }) {
           <CardHeader>
             <div className="space-y-2">
               <CardTitle className="text-center text-3xl font-bold bg-gradient-to-r from-rose-400 to-pink-600 text-transparent bg-clip-text">
-                <TextReveal text="A Love Confession" />
+                <TextReveal text="Surat Cinta Untuk Kamu" />
               </CardTitle>
-              <p className="text-center text-sm text-gray-500 mb-2">
+              <p className="text-center text-sm text-gray-500">
                 <TextReveal text="kamu mau gk jadi pacar aku?" />
               </p>
-              <p className="text-center text-xs text-gray-400 max-w-sm mx-auto leading-relaxed">
-                <TextReveal text="WAJIB BACA SEBELUM JAWAB :)" />
-              </p>
-              <p className="text-center text-xs text-gray-400 max-w-sm mx-auto leading-relaxed">
-                <TextReveal text="maap kalo confess nya sederhana gak kayak orang² ngasih buket bunga atau coklat, karna aku cmn bisa buat kek gini aja hehe, aku harap kamu mau terima:)" />
-              </p>
+              <div className="mt-4 space-y-2">
+                <p className="text-center text-xs text-gray-500">
+                  <TextReveal text="WAJIB BACA SEBELUM JAWAB :)" />
+                </p>
+                <p className="text-center text-xs text-gray-500 px-4">
+                  <TextReveal text="maap kalo confess nya sederhana gak kayak orang² ngasih buket bunga atau coklat, karna aku cmn bisa buat kek gini aja hehe, aku harap kamu mau terima:)" />
+                </p>
+              </div>
             </div>
           </CardHeader>
           <CardContent className="space-y-6">
