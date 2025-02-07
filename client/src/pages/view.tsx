@@ -53,9 +53,14 @@ export default function View({ params }: { params: { id: string } }) {
       >
         <Card className="shadow-lg border-pink-200">
           <CardHeader>
-            <CardTitle className="text-center text-3xl font-bold bg-gradient-to-r from-rose-400 to-pink-600 text-transparent bg-clip-text">
-              <TextReveal text="A Love Confession" />
-            </CardTitle>
+            <div className="space-y-2">
+              <CardTitle className="text-center text-3xl font-bold bg-gradient-to-r from-rose-400 to-pink-600 text-transparent bg-clip-text">
+                <TextReveal text="A Love Confession" />
+              </CardTitle>
+              <p className="text-center text-sm text-gray-500">
+                <TextReveal text="kamu mau gk jadi pacar aku?" />
+              </p>
+            </div>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="text-center">
