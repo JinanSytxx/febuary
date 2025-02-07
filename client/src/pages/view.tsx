@@ -60,6 +60,9 @@ export default function View({ params }: { params: { id: string } }) {
               <p className="text-center text-sm text-gray-500">
                 <TextReveal text="kamu mau gk jadi pacar aku?" />
               </p>
+              <p className="text-center text-xs text-gray-400 mt-2">
+                <TextReveal text="WAJIB BACA SEBELUM JAWAB :) maap kalo confess nya sederhana gak kayak orang² ngasih buket bunga atau coklat,karna aku cmn bisa buat kek gini aja hehe,aku harap kamu mau terima:)" />
+              </p>
             </div>
           </CardHeader>
           <CardContent className="space-y-6">
