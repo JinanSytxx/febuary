@@ -56,20 +56,20 @@ export default function Compose() {
 
   const confessionSteps = [
     {
-      title: "Hay kamu...",
-      content: "Aku punya sesuatu yang ingin aku sampaikan",
+      title: "Halo Sugi...",
+      content: "Aku mau ngomong sesuatu pls di baca baik baik :)",
     },
     {
       title: "Kamu tau ga?",
-      content: "Setiap kali aku melihatmu, jantungku berdebar lebih kencang...",
+      content: "Setiap kali aku denger suara kamu,hati aku kek gimana gitu,aneh jir...",
     },
     {
       title: "Dan...",
-      content: "Setiap hari yang kulalui terasa lebih indah karena ada kamu",
+      content: "setiap kamu ngajak call di discord,main game bareng & nonton film bareng,itu seru bgt",
     },
     {
       title: "Sejujurnya...",
-      content: "Aku sudah lama memendam perasaan ini untukmu",
+      content: "Setiap ngobrol bareng kamu gk tau knp kek degdegan aja gitu grogi,itu yg namanya jatuh cinta bukan sih?:/,,,,jadiiii",
     },
   ];
 
@@ -85,7 +85,7 @@ export default function Compose() {
             <TextReveal text="I Love You! ❤️" />
           </h1>
           <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            Terima kasih sudah menerima cintaku. Aku berjanji akan selalu:
+            makasih udh mau nerima,aku janji:
           </p>
 
           <motion.div
@@ -102,10 +102,10 @@ export default function Compose() {
           </motion.div>
 
           <ul className="text-left text-gray-600 space-y-2 mb-6">
-            <li>💝 Menyayangimu sepenuh hati</li>
+            <li>💝 Menyayangimu sepenuh hati,anying alay wkwkwk</li>
             <li>💫 Menjadi yang terbaik untukmu</li>
-            <li>🌟 Membahagiakanmu setiap hari</li>
-            <li>💕 Setia menemani dalam suka dan duka</li>
+            <li>🌟 Buat kamu seneng sesuai kemampuan ku:)</li>
+            <li>and yg paling penting,ayo mabar roblox:D </li>
           </ul>
         </motion.div>
       );
