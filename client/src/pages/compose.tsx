@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -9,6 +9,13 @@ export default function Compose() {
   const [step, setStep] = useState(0);
   const [showSuccess, setShowSuccess] = useState(false);
   const noButtonControls = useAnimation();
+  const [audioElement, setAudioElement] = useState<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    const audio = new Audio('/seandainya.mp3');
+    audio.loop = true;
+    setAudioElement(audio);
+  }, []);
 
   const handleMouseMove = async (e: React.MouseEvent) => {
     if (!showSuccess) {
@@ -27,6 +34,9 @@ export default function Compose() {
 
   const handleYesClick = () => {
     setShowSuccess(true);
+    if (audioElement) {
+      audioElement.play();
+    }
   };
 
   const confessionSteps = [
@@ -126,11 +136,18 @@ export default function Compose() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-rose-100 py-12 px-4" onMouseMove={handleMouseMove}>
+    <div 
+      className="min-h-screen bg-cover bg-center bg-no-repeat py-12 px-4 flex items-center justify-center"
+      style={{
+        backgroundImage: 'url("/background.jpg")',
+        backgroundAttachment: 'fixed'
+      }}
+      onMouseMove={handleMouseMove}
+    >
       {showSuccess && <FloatingHearts />}
 
-      <div className="max-w-md mx-auto">
-        <Card className="shadow-lg border-pink-200">
+      <div className="max-w-md w-full mx-auto">
+        <Card className="shadow-lg border-pink-200 bg-white/90 backdrop-blur-sm">
           <CardContent className="p-6 text-center">
             {renderContent()}
           </CardContent>
