@@ -192,7 +192,7 @@ export default function Compose() {
       {showSuccess && <FloatingHearts />}
 
       <div className="max-w-md w-full mx-auto">
-        <Card className="shadow-lg border-pink-200 bg-gradient-to-br from-purple-500/[0.3] to-blue-500/[0.3] backdrop-blur-sm">
+        <Card className="shadow-lg border-pink-200 bg-gradient-to-br from-sky-400/[0.3] to-white/[0.3] backdrop-blur-sm">
           <CardContent className="p-6 text-center">
             {renderContent()}
           </CardContent>
