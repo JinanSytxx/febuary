@@ -139,9 +139,19 @@ export default function Compose() {
 
     return (
       <>
-        <h1 className="text-3xl font-bold mb-8 bg-gradient-to-r from-rose-400 to-pink-600 text-transparent bg-clip-text">
-          <TextReveal text="Kamu mau gak jadi pacar aku?" />
-        </h1>
+        <div className="space-y-2 mb-8">
+          <h1 className="text-3xl font-bold bg-gradient-to-r from-rose-400 to-pink-600 text-transparent bg-clip-text">
+            <TextReveal text="Kamu mau gak jadi pacar aku?" />
+          </h1>
+          <div className="mt-4 space-y-2">
+            <p className="text-center text-xs text-gray-500">
+              <TextReveal text="TOLONG DI BACA DULU SEBELUM JAWAB:)" />
+            </p>
+            <p className="text-center text-xs text-gray-500 px-4">
+              <TextReveal text="Maap kalo confess nya sederhana aku cmn bisa buat kayak gini bukan kayak orang² yg kirim buket bunga,aku harap kamu mau terima:)" />
+            </p>
+          </div>
+        </div>
 
         <div className="flex justify-center items-center gap-4 mt-8">
           <Button
