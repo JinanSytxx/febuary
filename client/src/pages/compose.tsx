@@ -81,6 +81,9 @@ export default function Compose() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
+          <p className="text-xs text-gray-500 mb-2">
+            <TextReveal text="(Screenshot kirim ke aku ya biar tau jawaban kamu)" />
+          </p>
           <h1 className="text-3xl font-bold mb-6 bg-gradient-to-r from-rose-400 to-pink-600 text-transparent bg-clip-text">
             <TextReveal text="I Love You! ❤️" />
           </h1>
