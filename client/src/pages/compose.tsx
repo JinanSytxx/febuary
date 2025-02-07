@@ -86,6 +86,20 @@ export default function Compose() {
           <p className="text-gray-700 text-lg leading-relaxed mb-4">
             Terima kasih sudah menerima cintaku. Aku berjanji akan selalu:
           </p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="mb-6"
+          >
+            <img 
+              src="/surprise.jpg" 
+              alt="Surprise"
+              className="rounded-2xl mx-auto shadow-lg max-w-[250px] mb-6" 
+            />
+          </motion.div>
+
           <ul className="text-left text-gray-600 space-y-2 mb-6">
             <li>💝 Menyayangimu sepenuh hati</li>
             <li>💫 Menjadi yang terbaik untukmu</li>
