@@ -8,7 +8,7 @@ import { useToast } from "@/hooks/use-toast";
 
 export default function View({ params }: { params: { id: string } }) {
   const { toast } = useToast();
-  
+
   const { data: confession, isLoading } = useQuery({
     queryKey: ["/api/confessions", params.id],
   });
