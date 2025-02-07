@@ -45,7 +45,7 @@ export default function Compose() {
                   <TextReveal text="Kamu mau gak jadi pacar aku?" />
                 </h1>
 
-                <div className="flex justify-center gap-4 mt-8 relative">
+                <div className="flex justify-center items-center gap-4 mt-8">
                   <Button
                     onClick={handleYesClick}
                     className="bg-gradient-to-r from-rose-400 to-pink-600 hover:from-rose-500 hover:to-pink-700 min-w-[100px]"
@@ -53,10 +53,7 @@ export default function Compose() {
                     Iya
                   </Button>
 
-                  <motion.div
-                    animate={noButtonControls}
-                    style={{ position: 'absolute' }}
-                  >
+                  <motion.div animate={noButtonControls}>
                     <Button
                       variant="outline"
                       className="border-rose-300 min-w-[100px]"
