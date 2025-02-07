@@ -18,6 +18,7 @@ export default function Compose() {
     // Play audio when component mounts
     const playAudio = async () => {
       try {
+        audio.currentTime = 114; // Start at 1:54
         await audio.play();
       } catch (error) {
         console.error('Error playing audio:', error);
