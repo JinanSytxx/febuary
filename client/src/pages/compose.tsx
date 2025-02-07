@@ -14,7 +14,24 @@ export default function Compose() {
   useEffect(() => {
     const audio = new Audio('/seandainya.mp3');
     audio.loop = true;
+
+    // Play audio when component mounts
+    const playAudio = async () => {
+      try {
+        await audio.play();
+      } catch (error) {
+        console.error('Error playing audio:', error);
+      }
+    };
+
+    playAudio();
     setAudioElement(audio);
+
+    // Cleanup function to stop audio when component unmounts
+    return () => {
+      audio.pause();
+      audio.currentTime = 0;
+    };
   }, []);
 
   const handleMouseMove = async (e: React.MouseEvent) => {
@@ -34,9 +51,6 @@ export default function Compose() {
 
   const handleYesClick = () => {
     setShowSuccess(true);
-    if (audioElement) {
-      audioElement.play();
-    }
   };
 
   const confessionSteps = [
